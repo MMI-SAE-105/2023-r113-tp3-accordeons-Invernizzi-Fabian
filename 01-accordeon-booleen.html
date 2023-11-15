@@ -25,9 +25,11 @@
         </span>
       </section>
       
-      <section>
-        <button>bouton 3</button>
+      <section x-data="{open:false}">
+        <button @click="open=!open">bouton 3</button>
+        <span x-show="open" x-transition>
         <p>Impedit inventore quaerat sint itaque quasi eaque! Dolores praesentium officia ut, maxime quam at deserunt culpa accusantium iure a pariatur architecto reiciendis quas ratione blanditiis odio tempora qui aperiam earum?</p>
+        </span>
       </section>
     
     </div>
