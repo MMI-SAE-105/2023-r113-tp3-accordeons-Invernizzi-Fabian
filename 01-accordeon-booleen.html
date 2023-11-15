@@ -15,12 +15,14 @@
         <button @click="open=!open">bouton 1</button>
         <span x-show="open" x-transition>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laborum exercitationem soluta asperiores? Delectus, distinctio! Maxime quasi suscipit veniam consequatur nam iusto minima. Esse culpa iusto optio magni obcaecati.</p>
-      </span>
+       </span>
       </section>
       
-      <section>
-        <button>bouton 2</button>
+      <section x-data="{open:false}">
+        <button @click="open=!open">bouton 2</button>
+        <span x-show="open" x-transition>
         <p>Quibusdam, provident quis. Consectetur accusamus ea, deserunt ab nemo, corporis non, molestiae deleniti sed debitis minus vel ex maiores aut aperiam veniam quis dolores aliquam placeat facere dignissimos excepturi optio?</p>
+        </span>
       </section>
       
       <section>
