@@ -7,7 +7,7 @@
     <title>Accordéon horizontal</title>
     <style>
       #accordeon {
-     /* pour que les éléments soient alignés horizontalement */
+     display: flex;/* pour que les éléments soient alignés horizontalement */
      margin: 0;/* pour éviter les marges par défaut */
      padding: 0;/* pour éviter les "padding" par défaut */
 }
@@ -29,14 +29,14 @@
 
 #accordeon li figure {
      margin: 0;/* pour éviter les marges par défaut */
-     display: table/* pour que les éléments soient alignés horizontalement */
+     display: flex;/* pour que les éléments soient alignés horizontalement */
      width: 317px;/* largeur de l'élément intrérieur de 317px (= déplié) */
 }
 
 #accordeon li figure figcaption {
-     /* largeur du texte de 200px */
-     /* pour espacer le texte, padding de 10px */
-     /* pour que les éléments soient alignés verticalement */
+     width: 200px;/* largeur du texte de 200px */
+     padding-left: 10px;/* pour espacer le texte, padding de 10px */
+     vertical-align: top;/* pour que les éléments soient alignés verticalement */
     
      /* espace entre les éléments */
 }
@@ -47,6 +47,7 @@
      padding: 0;/* pour éviter les "padding" par défaut */
 }
     </style>
+    
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
