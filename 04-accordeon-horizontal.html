@@ -13,14 +13,14 @@
 }
 
 #accordeon li {
-     /* largeur de chaque élément replié 107px */
-     /* pour cacher le contenu dépassant de l'élément */
+     width: 107px;/* largeur de chaque élément replié 107px */
+     overflow: hidden;/* pour cacher le contenu dépassant de l'élément */
      /* pour l'animation, transition sur width */
-     /* couleur de fond #eee */
+     background-color: #eee;/* couleur de fond #eee */
      /* pour enlever les puces */
-     /* pour espacer les éléments, marge de 3px */
-     /* pour espacer le contenu, padding de 5px */
-     /* pour arrondir les bords de 5px */
+     margin: 3px;/* pour espacer les éléments, marge de 3px */
+     padding: 5px;/* pour espacer le contenu, padding de 5px */
+     border-radius: 5px;/* pour arrondir les bords de 5px */
 }
 
 #accordeon li.actif {
@@ -61,7 +61,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li class="actif">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
