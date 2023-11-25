@@ -19,7 +19,7 @@
       }
       
       .button {
-    background-color: #b9b9b9;
+    background-color: #dad8d8;
     border: none;
     color: rgb(83, 81, 81);
     padding: 15px 32px;
@@ -31,34 +31,43 @@
     cursor: pointer;
     border-radius: 4px;
     transition-duration: 0.4s;
-    width: 150px;
+    width: 200px;
     border: 2px solid #2c2c2c
     }
 
     .button:hover {
-        background-color: #7b7e7b;
+        background-color: #a3a5a3;
     }
-    p, button{
+    p, button, h1{
             font-family: 'Montserrat', sans-serif;
     }
+    p {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 800px;
+}
     </style>
+
   </head>
   <body>
 
-    <h1>Onglets</h1>
+    <h1>Les meilleurs Bodybuilder</h1>
 
     <div id="onglets" x-data="{ouvert :1}">
 
       <ul role="tablist">
-        <li role="tab" :class="{actif:ouvert === 1,}" class=""><button class="button" @click="ouvert=1">Ornn</button></li>
+        <li role="tab" :class="{actif:ouvert === 1,}" class=""><button class="button" @click="ouvert=1">Arnold Schwarzenegger</button></li>
         <li role="tab" :class="{actif:ouvert === 2,}" class=""><button class="button" @click="ouvert=2">Malphite</button></li>
         <li role="tab" :class="{actif:ouvert === 3,}" class="actif"><button class="button" @click="ouvert=3">Jax</button></li>
       </ul>
 
     <div class="parents">
       <div role="tabpanel" :class="{actif:ouvert === 1,}">
-        <h1>Panneau 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat asperiores nostrum sit. Sequi iste repellendus at recusandae explicabo ullam, maiores sit qui dicta voluptatibus nostrum quasi praesentium impedit harum?</p>
+        <h1>Arnold Schwarzenegger</h1>
+        <p>Arnold Alois Schwarzenegger (né le 30 juillet 1947) est un acteur, homme d'affaires, cinéaste, ancien homme politique et ancien culturiste professionnel autrichien et américain, surtout connu pour ses rôles dans des films d'action de grande envergure. Il a été le 38e gouverneur de la Californie de 2003 à 2011 et a figuré parmi les 100 personnes les plus influentes du monde selon le magazine Time en 2004 et 2007.</p>
       </div>
       <div role="tabpanel" :class="{actif:ouvert === 2,}">
         <h1>Panneau 2</h1>
