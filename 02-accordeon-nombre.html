@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+    <button><a href="index.html">Menu</a></button>
+    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
   </head>
   <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+    <h1>Les Bodybuilder les plus reconnus en 2023</h1>
+
     <div x-data="{open:0}">
       
       <section>
-        <button @click="open = 1">bouton 1</button>
-        <p x-show="open === 1" x-transition.scale.90.origin.left>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam maiores laborum, quisquam voluptatum doloremque amet officiis ipsa vitae vel delectus non autem expedita, perspiciatis excepturi fugiat similique, consectetur molestiae officia?</p>
+        <button @click="open = 1">Arnold Schwarzenegger</button>
+        <p x-show="open === 1" x-transition.scale.90.origin.left>Né le 30 juillet 1947, il est un acteur, homme d'affaires, cinéaste, ancien homme politique et ancien culturiste professionnel autrichien et américain, surtout connu pour ses rôles dans des films d'action de grande envergure. Il a été le 38e gouverneur de la Californie de 2003 à 2011 et a figuré parmi les 100 personnes les plus influentes du monde selon le magazine Time en 2004 et 2007.</p>
       </section>
       
       <section>
-        <button @click="open = 2">bouton 2</button>
-        <p x-show="open === 2" x-transition.scale.90.origin.left>Voluptate voluptatibus laborum temporibus eaque ea! Ratione magnam nesciunt ipsa illo repellendus eaque id laboriosam porro impedit nobis soluta, nulla amet quibusdam molestiae iste minus mollitia voluptatum dolore illum! Repellat?</p>
+        <button @click="open = 2">Chris Bumstead</button>
+        <p x-show="open === 2" x-transition.scale.90.origin.left>C'est un culturiste canadien. Il est l'actuel champion du Mr. Olympia dans la catégorie Classic Physique, remportant ce titre cinq fois de suite entre 2019 et 2023.</p>
       </section>
       
       <section>
-        <button @click="open = 3">bouton 3</button>
-        <p x-show="open === 3" x-transition.scale.90.origin.left>Ullam harum labore veniam neque possimus. Laudantium praesentium ducimus adipisci quasi, odio modi, animi fugit expedita optio, blanditiis reiciendis eius inventore laboriosam debitis distinctio corrupti ad quisquam. Ut, dicta distinctio!</p>
+        <button @click="open = 3">Ramon Dino</button>
+        <p x-show="open === 3" x-transition.scale.90.origin.left>Il est le principal athlète de la catégorie Classic Physique au Brésil et le vice-champion actuel du Mr. Olympia dans cette catégorie.</p>
       </section>
       
     </div>

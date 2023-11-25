@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon avec des booléens</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+    <button><a href="index.html">Menu</a></button>
+    <h1>Accordéon avec des booléens</h1>
   </head>
   <body>
-    <h1>Accordéon avec des booléens</h1>
+    <h1>Les Bodybuilder les plus reconnus en 2023</h1>
+
+    
     <div class="accordeon">
       
       <section x-data="{open:false}">
-        <button @click="open=!open">bouton 1</button>
+        <button @click="open=!open">Arnold Schwarzenegger</button>
         <span x-show="open" x-transition>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique blanditiis laborum exercitationem soluta asperiores? Delectus, distinctio! Maxime quasi suscipit veniam consequatur nam iusto minima. Esse culpa iusto optio magni obcaecati.</p>
+        <p>Né le 30 juillet 1947, il est un acteur, homme d'affaires, cinéaste, ancien homme politique et ancien culturiste professionnel autrichien et américain, surtout connu pour ses rôles dans des films d'action de grande envergure. Il a été le 38e gouverneur de la Californie de 2003 à 2011 et a figuré parmi les 100 personnes les plus influentes du monde selon le magazine Time en 2004 et 2007.</p>
        </span>
       </section>
       
       <section x-data="{open:false}">
-        <button @click="open=!open">bouton 2</button>
+        <button @click="open=!open">Chris Bumstead</button>
         <span x-show="open" x-transition>
-        <p>Quibusdam, provident quis. Consectetur accusamus ea, deserunt ab nemo, corporis non, molestiae deleniti sed debitis minus vel ex maiores aut aperiam veniam quis dolores aliquam placeat facere dignissimos excepturi optio?</p>
+        <p>C'est un culturiste canadien. Il est l'actuel champion du Mr. Olympia dans la catégorie Classic Physique, remportant ce titre cinq fois de suite entre 2019 et 2023.</p>
         </span>
       </section>
       
       <section x-data="{open:false}">
-        <button @click="open=!open">bouton 3</button>
+        <button @click="open=!open">Ramon Dino</button>
         <span x-show="open" x-transition>
-        <p>Impedit inventore quaerat sint itaque quasi eaque! Dolores praesentium officia ut, maxime quam at deserunt culpa accusantium iure a pariatur architecto reiciendis quas ratione blanditiis odio tempora qui aperiam earum?</p>
+        <p>Il est le principal athlète de la catégorie Classic Physique au Brésil et le vice-champion actuel du Mr. Olympia dans cette catégorie.</p>
         </span>
       </section>
     
