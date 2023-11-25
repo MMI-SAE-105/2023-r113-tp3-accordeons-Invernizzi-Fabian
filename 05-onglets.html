@@ -35,10 +35,14 @@
     border: 2px solid #2c2c2c
     }
     
-    h1{
+    .sous_titre{
       text-align: center;
     }
 
+    .all_button{
+      text-align: center;
+      width: 1500px;
+    }
 
     .button:hover {
         background-color: #a3a5a3;
@@ -46,6 +50,10 @@
     }
     p, button, h1{
             font-family: 'Montserrat', sans-serif;
+    }
+
+    .titre_principal{
+      padding-left: 440px;
     }
 
     p {
@@ -74,14 +82,14 @@
   </head>
   <body>
 
-    <h1>Les Bodybuilder les plus reconnus en 2023</h1>
+    <h1 class="titre_principal">Les Bodybuilder les plus reconnus en 2023</h1>
 
-    <div id="onglets" x-data="{ouvert :1}">
+    <div class= "all_button" id="onglets" x-data="{ouvert :1}">
 
       <ul role="tablist">
-        <li role="tab" :class="{actif:ouvert === 1,}" class=""><button class="button" @click="ouvert=1">Arnold Schwarzenegger</button></li>
-        <li role="tab" :class="{actif:ouvert === 2,}" class=""><button class="button" @click="ouvert=2">Christopher Adam Bumstead</button></li>
-        <li role="tab" :class="{actif:ouvert === 3,}" class="actif"><button class="button" @click="ouvert=3">Ramon Roche Queiroz</button></li>
+        <button role="tab" :class="{actif:ouvert === 1,}" class="button" @click="ouvert=1">Arnold Schwarzenegger</button></li>
+        <button role="tab" :class="{actif:ouvert === 2,}" class="button" @click="ouvert=2">Christopher Adam Bumstead</button></li>
+        <button role="tab" :class="{actif:ouvert === 3,}" class="button" @click="ouvert=3">Ramon Roche Queiroz</button></li>
       </ul>
 
     <div class="parents">
@@ -100,7 +108,7 @@
 
       <div role="tabpanel" :class="{actif:ouvert === 2,}">
         <h1 class="sous_titre">Christopher Adam Bumstead</h1>
-        <p><strong>Christopher Adam Bumstead</strong>, plus connu sous le nom de Chris Bumstead (surnommé « CBum »), né le 2 février 1995 à Ottawa en Ontario, est un culturiste canadien. Bumstead est l'actuel champion du Mr. Olympia dans la catégorie Classic Physique, remportant ce titre cinq fois de suite entre 2019 et 2023. Bumstead doit également sa réputation à sa large présence sur les réseaux sociaux où celui-ci partage son quotidien lié au culturisme2,3.</p>
+        <p><strong>Christopher Adam Bumstead</strong>, plus connu sous le nom de Chris Bumstead (surnommé « CBum »), né le 2 février 1995 à Ottawa en Ontario, est un culturiste canadien. Bumstead est l'actuel champion du Mr. Olympia dans la catégorie Classic Physique, remportant ce titre cinq fois de suite entre 2019 et 2023. Bumstead doit également sa réputation à sa large présence sur les réseaux sociaux où celui-ci partage son quotidien lié au culturisme.</p>
         
         <div class="image-grid">
           <img src="img/Chris-Bumstead-Gives-Advice-On-Whether-or-Not-to-Use-Steroids-1-1.jpg" alt="Image 1">
