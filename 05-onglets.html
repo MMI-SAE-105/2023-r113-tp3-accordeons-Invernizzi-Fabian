@@ -48,34 +48,41 @@
     margin-bottom: 20px;
     text-align: justify;
     width: 800px;
-}
+    }
     </style>
 
   </head>
   <body>
 
-    <h1>Les meilleurs Bodybuilder</h1>
+    <h1>Les Bodybuilder les plus reconnus en 2023</h1>
 
     <div id="onglets" x-data="{ouvert :1}">
 
       <ul role="tablist">
         <li role="tab" :class="{actif:ouvert === 1,}" class=""><button class="button" @click="ouvert=1">Arnold Schwarzenegger</button></li>
-        <li role="tab" :class="{actif:ouvert === 2,}" class=""><button class="button" @click="ouvert=2">Malphite</button></li>
-        <li role="tab" :class="{actif:ouvert === 3,}" class="actif"><button class="button" @click="ouvert=3">Jax</button></li>
+        <li role="tab" :class="{actif:ouvert === 2,}" class=""><button class="button" @click="ouvert=2">Christopher Adam Bumstead</button></li>
+        <li role="tab" :class="{actif:ouvert === 3,}" class="actif"><button class="button" @click="ouvert=3">Ramon Roche Queiroz</button></li>
       </ul>
 
     <div class="parents">
       <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Arnold Schwarzenegger</h1>
-        <p>Arnold Alois Schwarzenegger (né le 30 juillet 1947) est un acteur, homme d'affaires, cinéaste, ancien homme politique et ancien culturiste professionnel autrichien et américain, surtout connu pour ses rôles dans des films d'action de grande envergure. Il a été le 38e gouverneur de la Californie de 2003 à 2011 et a figuré parmi les 100 personnes les plus influentes du monde selon le magazine Time en 2004 et 2007.</p>
+        <p><strong>Arnold Alois Schwarzenegger</strong> (né le 30 juillet 1947) est un acteur, homme d'affaires, cinéaste, ancien homme politique et ancien culturiste professionnel autrichien et américain, surtout connu pour ses rôles dans des films d'action de grande envergure. Il a été le 38e gouverneur de la Californie de 2003 à 2011 et a figuré parmi les 100 personnes les plus influentes du monde selon le magazine Time en 2004 et 2007.</p>
       </div>
       <div role="tabpanel" :class="{actif:ouvert === 2,}">
-        <h1>Panneau 2</h1>
-        <p>Blanditiis facilis ducimus, aliquam debitis, aperiam incidunt aspernatur qui harum sunt quibusdam libero quidem quaerat modi tenetur et placeat. Recusandae quod dolorem dolore perspiciatis quis? Reiciendis, placeat. Ullam, nisi eos!</p>
+        <h1>Christopher Adam Bumstead</h1>
+        <p><strong>Christopher Adam Bumstead</strong>, plus connu sous le nom de Chris Bumstead (surnommé « CBum »), né le 2 février 1995 à Ottawa en Ontario, est un culturiste canadien. Bumstead est l'actuel champion du Mr. Olympia dans la catégorie Classic Physique, remportant ce titre cinq fois de suite entre 2019 et 2023.
+
+          Bumstead doit également sa réputation à sa large présence sur les réseaux sociaux où celui-ci partage son quotidien lié au culturisme2,3.</p>
       </div>
       <div role="tabpanel" :class="{actif:ouvert === 3,}">
-        <h1>Panneau 3</h1>
-        <p>Recusandae animi provident repellendus odit saepe voluptates deserunt ratione suscipit labore doloribus illo atque porro unde non blanditiis commodi dolorum deleniti, quaerat ullam fugit beatae laudantium molestias numquam. Fuga, libero.</p>
+        <h1>Ramon Roche Queiroz</h1>
+        <p><strong>Ramon Roche Queiroz</strong>, né à Rio Branco le 9 février 1995, communément connu sous le nom de Ramon Dino ou "O Dinossauro do Acre" (Le Dinosaure d'Acre), est un culturiste professionnel brésilien. Il est le principal athlète de la catégorie Classic Physique au Brésil et le vice-champion actuel du Mr. Olympia dans cette catégorie. Il a remporté l'Arnold Classic Ohio en 2023. Sa limite de poids dans sa catégorie est de 115 kilogrammes.</p>
+        <div class="image-grid">
+          <img src="img/Ramon-Dino-Mr-Olympia.jpg" alt="Image 1">
+          <img src="img/Dino tshirt.jpg" alt="Image 2">
+          <img src="image3.jpg" alt="Image 3">
+      </div>
       </div>
     </div>
 
