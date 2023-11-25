@@ -6,30 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Onglets</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    <style>
+      .parentspanneaux {
+        position: relative;
+      }
+      [role ="tabpanel"]{
+        position: absolute;
+        opacity: 0;
+      }
+      [role ="tabpanel"].actif{
+        opacity: 1;
+      }
+      
+    </style>
   </head>
   <body>
 
     <h1>Onglets</h1>
 
-    <div id="onglets" x-data="{isOpen :0}">
+    <div id="onglets" x-data="{actif :0}">
 
     <ul role="tablist">
-      <button role="tab" @click="isOpen = 1" >Onglet 1</button>
-      <button role="tab" @click="isOpen = 2" >Onglet 2</button>
+      <button role="tab" @click="actif = 1">Onglet 1</button>
+      <button role="tab" @click="actif = 2" >Onglet 2</button>
       <button role="tab" @click="isOpen = 3" >Onglet 3</button>
     </ul>
 
     <div>
-      <div role="tabpanel" x-show="isOpen === 1" >
+      <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat asperiores nostrum sit. Sequi iste repellendus at recusandae explicabo ullam, maiores sit qui dicta voluptatibus nostrum quasi praesentium impedit harum?</p>
       </div>
-      <div role="tabpanel" x-show="isOpen === 2">
+      <div role="tabpanel" :class="{actif:ouvert === 2,}">
         <h1>Panneau 2</h1>
         <p>Blanditiis facilis ducimus, aliquam debitis, aperiam incidunt aspernatur qui harum sunt quibusdam libero quidem quaerat modi tenetur et placeat. Recusandae quod dolorem dolore perspiciatis quis? Reiciendis, placeat. Ullam, nisi eos!</p>
       </div>
-      <div role="tabpanel" x-show="isOpen === 3">
+      <div role="tabpanel" :class="{actif:ouvert === 3,}">
         <h1>Panneau 3</h1>
         <p>Recusandae animi provident repellendus odit saepe voluptates deserunt ratione suscipit labore doloribus illo atque porro unde non blanditiis commodi dolorum deleniti, quaerat ullam fugit beatae laudantium molestias numquam. Fuga, libero.</p>
       </div>
