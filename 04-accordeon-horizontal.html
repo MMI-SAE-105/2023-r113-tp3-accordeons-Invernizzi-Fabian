@@ -8,6 +8,12 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
+
+    img{
+      width: 110px;
+    height: 200px;
+    object-fit: cover;  
+    }
       #accordeon {
      display: flex;/* pour que les éléments soient alignés horizontalement */
      margin: 0;/* pour éviter les marges par défaut */
@@ -52,33 +58,34 @@
     
   </head>
   <body>
-    <h1>Accordéon horizontal</h1>
-
+    <h1>Les Bodybuilder les plus reconnus en 2023</h1>
+    
     <ul id="accordeon" x-data="{isOpen:0}">
       <li @click="isOpen = 1" :class="{actif:isOpen === 1,}">
         <figure>
-          <img src="https://picsum.photos/100?random=1" alt="" width="102">
+          <img src="img/arnold/Arnold jeune.jpg" alt="" width="102">
           <figcaption>
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <h3>Arnold Schwarzenegger</h3>
+            <p>Il a été le 38e gouverneur de la Californie de 2003 à 2011 et a figuré parmi les 100 personnes les plus influentes du monde selon le magazine Time en 2004 et 2007.</p>
+
           </figcaption>
         </figure>
       </li>
       <li @click="isOpen = 2" :class="{actif:isOpen === 2,}">
         <figure>
-          <img src="https://picsum.photos/100?random=2" alt="" width="102">
+          <img src="img/cbum/Chris-Bumstead-Gives-Advice-On-Whether-or-Not-to-Use-Steroids-1-1.jpg" alt="" width="102">
           <figcaption>
-            <h3>Enim, numquam nobis.</h3>
-            <p>Architecto eius expedita eos assumenda esse?</p>
+            <h3>Chris Bumstead</h3>
+            <p>est un culturiste canadien. Il est l'actuel champion du Mr. Olympia dans la catégorie Classic Physique, remportant ce titre cinq fois de suite entre 2019 et 2023.</p>
           </figcaption>
         </figure>
       </li>
       <li @click="isOpen = 3" :class="{actif:isOpen === 3,}">
         <figure>
-          <img src="https://picsum.photos/100?random=3" alt="" width="102">
+          <img src="img/dino/Dino mister olympia.jpg" alt="" width="102">
           <figcaption>
-            <h3>Quas, ullam architecto.</h3>
-            <p>Animi, nobis. Natus error rem suscipit?</p>
+            <h3>Ramon Dino</h3>
+            <p>Il est le principal athlète de la catégorie Classic Physique au Brésil et le vice-champion actuel du Mr. Olympia dans cette catégorie.</p>
           </figcaption>
         </figure>
       </li>
