@@ -7,7 +7,7 @@
     <title>Onglets</title>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
-      .parentspanneaux {
+      .parents {
         position: relative;
       }
       [role ="tabpanel"]{
@@ -24,15 +24,15 @@
 
     <h1>Onglets</h1>
 
-    <div id="onglets" x-data="{actif :0}">
+    <div id="onglets" x-data="{ouvert :1}">
 
-    <ul role="tablist">
-      <button role="tab" @click="actif = 1">Onglet 1</button>
-      <button role="tab" @click="actif = 2" >Onglet 2</button>
-      <button role="tab" @click="isOpen = 3" >Onglet 3</button>
-    </ul>
+      <ul role="tablist">
+        <li role="tab" :class="{actif:ouvert === 1,}" class=""><button class="button" @click="ouvert=1">Ornn</button></li>
+        <li role="tab" :class="{actif:ouvert === 2,}" class=""><button class="button" @click="ouvert=2">Malphite</button></li>
+        <li role="tab" :class="{actif:ouvert === 3,}" class="actif"><button class="button" @click="ouvert=3">Jax</button></li>
+      </ul>
 
-    <div>
+    <div class="parents">
       <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci placeat asperiores nostrum sit. Sequi iste repellendus at recusandae explicabo ullam, maiores sit qui dicta voluptatibus nostrum quasi praesentium impedit harum?</p>
